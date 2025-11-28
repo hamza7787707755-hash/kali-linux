@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المصادر والمراجع - الأمن السبراني</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'arabic': ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        'cyber-dark': '#0a0a0a',
+                        'cyber-gray': '#1a1a1a',
+                        'cyber-light': '#2a2a2a',
+                        'cyber-accent': '#00d4ff',
+                        'cyber-green': '#00ff88',
+                        'cyber-orange': '#ff6b35'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            font-family: 'Cairo', sans-serif;
+        }
+        .cyber-glow {
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+        }
+        .cyber-border {
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .resource-card {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-cyber-dark text-white font-arabic">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-cyber-gray/90 backdrop-blur-md cyber-border border-b">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-cyber-accent rounded-lg flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-cyber-dark text-xl"></i>
+                    </div>
+                    <h1 class="text-xl font-bold text-cyber-accent">الأمن السبراني</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="text-white hover:text-cyber-accent transition-colors">الرئيسية</a>
+                    <a href="/kali-tools.html" class="text-white hover:text-cyber-accent transition-colors">أدوات Kali Linux</a>
+                    <a href="/resources.html" class="text-cyber-accent font-semibold hover:text-cyber-green transition-colors">المصادر</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-24 pb-12 bg-cyber-gray">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyber-accent to-cyber-green bg-clip-text text-transparent">
+                المصادر والمراجع
+            </h1>
+            <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                مجموعة من أفضل المصادر والمراجع لتعلم الأمن السبراني واختبار الاختراق
+            </p>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            
+            <!-- Official Documentation -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-cyber-accent flex items-center">
+                    <i class="fas fa-book mr-4"></i>
+                    الوثائق الرسمية
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-accent/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-linux text-cyber-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-accent">Kali Linux Docs</h3>
+                                <p class="text-gray-400">الوثائق الرسمية</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            الوثائق الرسمية لتوزيعة Kali Linux مع دليل كامل للتثبيت والاستخدام.
+                        </p>
+                        <a href="https://www.kali.org/docs/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة الموقع
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-green/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-tools text-cyber-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-green">Metasploit Framework</h3>
+                                <p class="text-gray-400">الوثائق الرسمية</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            دليل Metasploit الرسمي مع أمثلة وشروحات تفصيلية لكل الوحدات.
+                        </p>
+                        <a href="https://docs.metasploit.com/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة الموقع
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-orange/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-spider text-cyber-orange text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-orange">OWASP</h3>
+                                <p class="text-gray-400">أفضل الممارسات</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            مشروع OWASP لتعلم أفضل الممارسات في أمن تطبيقات الويب.
+                        </p>
+                        <a href="https://owasp.org/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة الموقع
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Platforms -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-cyber-accent flex items-center">
+                    <i class="fas fa-graduation-cap mr-4"></i>
+                    منصات التعلم
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-accent/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-flag text-cyber-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-accent">TryHackMe</h3>
+                                <p class="text-gray-400">منصة تعليمية</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            منصة تعليمية تفاعلية تقدم غرف تعليمية لاختبار المهارات العملية في الأمن السبراني.
+                        </p>
+                        <a href="https://tryhackme.com/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة الموقع
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-green/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-cube text-cyber-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-green">Hack The Box</h3>
+                                <p class="text-gray-400">منصة تحديات</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            منصة تحديات اختراق توفر أجهزة افتراضية لاختبار المهارات في بيئة آمنة.
+                        </p>
+                        <a href="https://www.hackthebox.com/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة الموقع
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-orange/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-play-circle text-cyber-orange text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-orange">VulnHub</h3>
+                                <p class="text-gray-400">أجهزة ضعيفة</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            مكتبة من الأجهزة الافتراضية الضعيفة المصممة لتعلم اختبار الاختراق.
+                        </p>
+                        <a href="https://www.vulnhub.com/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة الموقع
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Channels -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-cyber-accent flex items-center">
+                    <i class="fab fa-youtube mr-4"></i>
+                    قنوات يوتيوب مفيدة
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-accent/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-video text-cyber-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-accent">The Cyber Mentor</h3>
+                                <p class="text-gray-400">تعليمي وعملي</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            قناة تعليمية ممتازة تغطي أساسيات الأمن السبراني واختبار الاختراق مع أمثلة عملية.
+                        </p>
+                        <a href="https://www.youtube.com/c/TheCyberMentor" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة القناة
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-green/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-hacker text-cyber-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-green">LiveOverflow</h3>
+                                <p class="text-gray-400">تقني عميق</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            قناة متخصصة في الأمن السبراني التقني مع تحليل عميق للثغرات وكيفية استغلالها.
+                        </p>
+                        <a href="https://www.youtube.com/c/LiveOverflow" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة القناة
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-orange/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-terminal text-cyber-orange text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-orange">NetworkChuck</h3>
+                                <p class="text-gray-400">شبكات وأمن</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            قناة ممتعة تغطي الشبكات والأمن السبراني بطريقة مبسطة وممتعة.
+                        </p>
+                        <a href="https://www.youtube.com/c/NetworkChuck" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة القناة
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Books -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-cyber-accent flex items-center">
+                    <i class="fas fa-book mr-4"></i>
+                    الكتب الم recommended
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-accent/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-book-open text-cyber-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-accent">The Web Application Hacker's Handbook</h3>
+                                <p class="text-gray-400">Dafydd Stuttard & Marcus Pinto</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            الكتاب المرجعي الأفضل لفهم ثغرات تطبيقات الويب وكيفية اكتشافها واستغلالها.
+                        </p>
+                        <div class="flex items-center text-cyber-green text-sm">
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-2"></i>
+                            <span>5/5 نجوم</span>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-green/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-book-open text-cyber-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-green">Metasploit: The Penetration Tester's Guide</h3>
+                                <p class="text-gray-400">David Kennedy et al.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            دليل شامل لاستخدام Metasploit في اختبار الاختراق مع أمثلة عملية مفصلة.
+                        </p>
+                        <div class="flex items-center text-cyber-green text-sm">
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-2"></i>
+                            <span>5/5 نجوم</span>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-orange/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-book-open text-cyber-orange text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-orange">Hacking: The Art of Exploitation</h3>
+                                <p class="text-gray-400">Jon Erickson</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            كتاب عميق يشرح أساسيات الاختراق من منظور تقني ومبرمج.
+                        </p>
+                        <div class="flex items-center text-cyber-green text-sm">
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="far fa-star mr-2"></i>
+                            <span>4/5 نجوم</span>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-accent/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-book-open text-cyber-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-accent">Practical Malware Analysis</h3>
+                                <p class="text-gray-400">Michael Sikorski & Andrew Honig</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            دليل عملي لتحليل البرامج الضارة وفهم كيفية عملها واكتشافها.
+                        </p>
+                        <div class="flex items-center text-cyber-green text-sm">
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-1"></i>
+                            <i class="fas fa-star mr-2"></i>
+                            <span>5/5 نجوم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools and Software -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-cyber-accent flex items-center">
+                    <i class="fas fa-tools mr-4"></i>
+                    أدوات وبرامج إضافية
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-accent/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-desktop text-cyber-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-accent">VirtualBox</h3>
+                                <p class="text-gray-400">محاكاة افتراضية</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            برنامج محاكاة افتراضية مجاني لإنشاء بيئة آمنة لاختبار الأدوات والمهارات.
+                        </p>
+                        <a href="https://www.virtualbox.org/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            تحميل البرنامج
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-green/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-network-wired text-cyber-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-green">Wireshark</h3>
+                                <p class="text-gray-400">تحليل الشبكات</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            أداة قوية لتحليل حركة المرور على الشبكة وفهم البروتوكولات المختلفة.
+                        </p>
+                        <a href="https://www.wireshark.org/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            تحميل البرنامج
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-orange/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-shield-alt text-cyber-orange text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-orange">Nmap</h3>
+                                <p class="text-gray-400">فحص الشبكات</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            أداة فحص الشبكات الأكثر شهرة لاكتشاف الأجهزة والمنافذ والخدمات.
+                        </p>
+                        <a href="https://nmap.org/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة الموقع
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community and Forums -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-cyber-accent flex items-center">
+                    <i class="fas fa-users mr-4"></i>
+                    المجتمعات والمنتديات
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-accent/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fab fa-reddit text-cyber-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-accent">r/netsec</h3>
+                                <p class="text-gray-400">مجتمع Reddit</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            مجتمع نشط لمناقشة أخبار الأمن السبراني ومشاركة الأبحاث والثغرات.
+                        </p>
+                        <a href="https://www.reddit.com/r/netsec/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة المنتدى
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-green/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-comments text-cyber-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-green">Stack Exchange</h3>
+                                <p class="text-gray-400">Information Security</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            منصة أسئلة وأجوبة متخصصة في الأمن السبراني مع إجابات من خبراء المجال.
+                        </p>
+                        <a href="https://security.stackexchange.com/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            زيارة الموقع
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-cyber-accent flex items-center">
+                    <i class="fas fa-certificate mr-4"></i>
+                    الشهادات المهنية
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-accent/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-medal text-cyber-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-accent">OSCP</h3>
+                                <p class="text-gray-400">Offensive Security</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            شهادة اختبار الاختراق العملية الأكثر شهرة، تتطلب اختراق أجهزة في بيئة حقيقية.
+                        </p>
+                        <a href="https://www.offensive-security.com/pwk-oscp/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            معرفة المزيد
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-green/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-award text-cyber-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-green">CEH</h3>
+                                <p class="text-gray-400">Certified Ethical Hacker</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            شهادة القرصنة الأخلاقية المعترف بها عالمياً من EC-Council.
+                        </p>
+                        <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            معرفة المزيد
+                        </a>
+                    </div>
+
+                    <div class="resource-card bg-cyber-gray/50 p-6 rounded-lg cyber-border">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyber-orange/20 rounded-lg flex items-center justify-center ml-4">
+                                <i class="fas fa-trophy text-cyber-orange text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-cyber-orange">CISSP</h3>
+                                <p class="text-gray-400">Information Security</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            شهادة متقدمة في أمن المعلومات للمحترفين ذوي الخبرة.
+                        </p>
+                        <a href="https://www.isc2.org/Certifications/CISSP" target="_blank" class="inline-flex items-center text-cyber-green hover:text-cyber-accent transition-colors">
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                            معرفة المزيد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-gray py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center mb-6">
+                <div class="w-10 h-10 bg-cyber-accent rounded-lg flex items-center justify-center mr-4">
+                    <i class="fas fa-shield-alt text-cyber-dark text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-cyber-accent">الأمن السبراني وKali Linux</h3>
+            </div>
+            <p class="text-gray-400 mb-4">دليل شامل لتعلم الأمن السبراني واختبار الاختراق</p>
+            <p class="text-gray-500 text-sm">© 2024 جميع الحقوق محفوظة. تم إنشاء المحتوى للأغراض التعليمية.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.querySelector('.md\\:flex');
+        
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
